@@ -98,18 +98,21 @@ jupyter notebook notebooks/Spotify_Popularity_Analysis.ipynb
 
 ```
 Spotify-Songs-Popularity/
-├── data/
-│   └── spotify_tracks.csv
+├── spotify_analysis.py
 ├── notebooks/
 │   └── Spotify_Popularity_Analysis.ipynb
-├── outputs/
-│   ├── processed_tracks.csv
-│   ├── correlation_heatmap.png
-│   └── genre_popularity_chart.png
+├── outputs/                  # processed_tracks.csv, spotify_analysis.png
 ├── requirements.txt
 └── README.md
 ```
 
 ---
 
-<div align="center"><sub>Omkar Pallerla · MS Business Analytics ASU · BI Engineer · Power BI | Snowflake | Azure | Databricks Certified</sub></div>
+
+## 🧪 Data & Reproducibility
+
+The script **generates a seeded synthetic catalogue of 50,000 tracks** (no Spotify API calls or downloaded dataset), so the correlations it prints (e.g. danceability ≈ +0.31, instrumentalness ≈ -0.25) differ from the headline figures above, which come from the original analysis of the public Spotify dataset. Swap in a real tracks CSV (same column names) to repeat the analysis on real data.
+
+---
+
+<div align="center"><sub>Omkar Pallerla · MS Business Analytics, ASU · Business Intelligence Analyst · Google Cloud | Azure | Databricks | Snowflake Certified</sub></div>
